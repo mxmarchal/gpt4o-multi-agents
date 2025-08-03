@@ -1,18 +1,18 @@
 # GPT-4o Multi-Agent System
 
-A voice-controlled multi-agent system built with TypeScript and Bun that uses GPT-4o to handle various home automation tasks through modular agents. This is a prototype project for learning agent orchestration and multi-agent system design patterns.
+A multi-agent system built with TypeScript and Bun that uses GPT-4o to handle various home automation tasks through modular agents. This is a prototype project for learning agent orchestration and multi-agent system design patterns.
 
 ## Overview
 
-This project implements a multi-agent architecture where a main orchestrator agent delegates tasks to specialized agents (like Spotify control) based on voice commands. The system is designed for quick responses (under 15 seconds) and supports multiple languages.
+This project implements a multi-agent architecture where a main orchestrator agent delegates tasks to specialized agents (like Spotify control) based on text commands. The system is designed for quick responses (under 15 seconds) and supports multiple languages.
 
 **Note**: This is a learning project focused on exploring agent orchestration patterns, function calling with LLMs, and modular system design. It serves as a practical exploration of multi-agent architectures and their implementation challenges.
 
 ## Features
 
-- **Voice-controlled interface** - Optimized for spoken interactions
+- **Text-based interface** - Command-line interactions
 - **Multi-agent architecture** - Modular design with specialized agents
-- **Spotify integration** - Control music playback, get track information
+- **Mock Spotify integration** - Simulated music playback control (fake data)
 - **Multi-language support** - Responds in the user's preferred language
 - **OpenAI GPT-4o integration** - Leverages function calling for task delegation
 
@@ -45,7 +45,7 @@ The system consists of:
 
 ## Usage
 
-Run the system with a voice command:
+Run the system with a text command:
 
 ```bash
 bun run index.ts "play some music"
@@ -88,7 +88,7 @@ The system is optimized for quick responses, with performance metrics logged for
 
 ## Future Enhancements
 
-- Real Spotify API integration (currently uses mock data)
+- Real Spotify API integration (currently all fake/mock data)
 - Additional smart home agents (lights, temperature, etc.)
 - Voice synthesis integration for audio responses
 - WebSocket support for real-time interactions
